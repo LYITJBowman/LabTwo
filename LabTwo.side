@@ -1,0 +1,77 @@
+{
+  "id": "773dbc6a-dcb3-4c3e-bd28-38a57d8deb21",
+  "version": "2.0",
+  "name": "LabTwo",
+  "url": "http://localhost:8080/LabTwo",
+  "tests": [{
+    "id": "0759059f-4c2a-4232-8c1b-50d53e4f2ceb",
+    "name": "Test Servlet",
+    "commands": [{
+      "id": "d9ff830b-bf2d-4a75-b84d-09794c67b9cf",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/LabTwo/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e90cc08-096c-47d5-83f8-948376f22407",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1054x808",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28d4a942-90e2-4ddb-aebe-afc7cd221270",
+      "comment": "",
+      "command": "click",
+      "target": "name=yourName",
+      "targets": [
+        ["name=yourName", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='yourName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99998cfb-30fe-4c79-a5c8-2af6b36c63f9",
+      "comment": "",
+      "command": "type",
+      "target": "name=yourName",
+      "targets": [
+        ["name=yourName", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='yourName']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "James"
+    }, {
+      "id": "2b153138-bb12-48d9-9948-5891318167a8",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(2)",
+      "targets": [
+        ["css=input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='Call Servlet']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45b5ea1f-6e1d-45aa-a105-af3ec14844dd",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "e276aaaa-26f1-4732-b6ae-54267aa938d4",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["0759059f-4c2a-4232-8c1b-50d53e4f2ceb"]
+  }],
+  "urls": ["http://localhost:8080/LabTwo"],
+  "plugins": []
+}

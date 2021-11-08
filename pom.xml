@@ -33,6 +33,43 @@
           <release>16</release>
         </configuration>
       </plugin>
+      <plugin>
+	    <groupId>org.codehaus.mojo</groupId>
+	    <artifactId>exec-maven-plugin</artifactId>
+	    <version>1.6.0</version>
+	    <executions>
+	      <execution>
+            <id>Postman Test</id>
+            <phase>test</phase>
+            <goals>
+                <goal>exec</goal>
+            </goals>
+            <configuration>
+                <executable>
+                    newman
+                </executable>
+                <commandlineArgs>
+                    run C:\Users\james\eclipse-workspace\LabTwo\LabTwo.json
+                </commandlineArgs>
+            </configuration>
+	      </execution>
+	      <execution>
+            <id>Selenium Test</id>
+            <phase>test</phase>
+            <goals>
+                <goal>exec</goal>
+            </goals>
+            <configuration>
+                <executable>
+                    selenium-side-runner
+                </executable>
+                <commandlineArgs>
+                   C:\Users\james\eclipse-workspace\LabTwo\LabTwo.side 
+                </commandlineArgs>
+            </configuration>
+	      </execution>
+	    </executions>
+	  </plugin>
     </plugins>
   </build>
 </project>
